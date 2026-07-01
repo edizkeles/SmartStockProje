@@ -1,0 +1,6 @@
+@echo off
+echo [1/2] Backend API Yeni Pencerede Baslatiliyor...
+start "SmartStock Backend API" cmd /k "cd /d "%~dp0smartstockapi\SmartStock.API" && dotnet run --launch-profile http"
+
+echo [2/2] Frontend Bu Pencerede Baslatiliyor...
+cd /d "%~dp0smartstockreact" && npm run dev
